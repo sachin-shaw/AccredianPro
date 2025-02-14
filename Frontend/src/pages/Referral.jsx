@@ -20,7 +20,7 @@ function Referral({ openModal, setOpenModal }) {
     e.preventDefault();
     setLoading(true);
     try {
-      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/v1/referral/create`, {
+      const res = await fetch("https://accredianpr.onrender.com/api/v1/referral/create", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
